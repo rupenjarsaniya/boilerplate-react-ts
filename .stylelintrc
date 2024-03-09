@@ -1,0 +1,20 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "scss/comment-no-empty": null,
+    "no-descending-specificity": null,
+    "no-empty-source": null,
+    "property-no-vendor-prefix": null,
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy",
+    "selector-class-pattern": "^[a-zA-Z0-9-_]+$",
+    "custom-property-pattern": "^[a-zA-Z][a-zA-Z0-9-]+$",
+    "keyframes-name-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9-_]+$",
+    "scss/at-mixin-pattern": "^[a-zA-Z][a-zA-Z0-9-_]+$",
+    "scss/at-extend-no-missing-placeholder": null,
+    "selector-pseudo-class-no-unknown": null,
+    "scss/no-global-function-names": null
+  },
+  "ignoreFiles": ["src/assets/scss/mixins.scss", "public/assets/styles.css"]
+}

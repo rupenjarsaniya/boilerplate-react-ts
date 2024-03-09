@@ -1,0 +1,33 @@
+@import "adaptive";
+@import "normalize";
+@import "global";
+@import "root";
+@import "tokens";
+@import "common";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+
+  @media (width >= 2400px) {
+    font-size: calc(100vw / 2400 * 10);
+  }
+
+  @include media-desktop-large {
+    font-size: 10px;
+  }
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  background: var(--text-background);
+}
+
+.marquee {
+  gap: 3rem;
+}
